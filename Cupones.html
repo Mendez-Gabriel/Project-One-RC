@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="autor" content="Visioneers">
+  <meta name="description" content="Pagina locales de Sanwicherias">
+  <meta name="keywords" content="Sandwich, Sandwicherias">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Esquina del Sándwich</title>
+  <link rel="shortcut icon" href="./assets/img/logos/sandwich.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body class="bodyNaranja">
+  <header  class="position-fixed w-100">
+		<nav class="navbar navbar-expand-lg bg-dark bg-gradient d-flex">
+
+			<div class="container-fluid d-lg-none"> <!-- NavBar Mobile -->
+			<img src="./assets/img/logos/logo-icono.svg" class="navbarIcon d-lg-none" alt="">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#offcanvasResponsive" aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			</div>
+
+			<div class=" d-none d-lg-block mx-auto"> <!-- direc-pedidos -->
+			
+
+			<div class="mb-1 d-none d-lg-block mx-auto navbarItem"> <!-- Iniciar sesion -->
+				<a href="#" class="link-warning text-decoration-none">
+				<i class="bi bi-person"></i>
+				<button type="button" class="btn link-warning traslateInicio text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Iniciar Sesion
+				</button>
+			</div>
+
+			
+			</div>
+
+			<div class="d-flex flex-column mx-auto"> <!-- logo-nav -->
+			<div class="d-flex justify-content-center">
+				<img src="./assets/img/logos/logo.svg" class="w-25 d-lg-block d-none" alt="">
+			</div>
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse d-flex justify-content-center d-none" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active text-warning" aria-current="page" href="./index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./restaurantes.html">Restaurantes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./mispedidos.html">Mis Pedidos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./Cupones.html">Mis Cupones</a>
+					</li>  
+					<li class="nav-item"><a class="nav-link" href="./perfil.html">Perfil</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Atencion</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="./about.html">Acerca de</a>
+					</li>
+						
+					</li>
+					</ul>
+				</div>
+			</div>
+			</div>  
+
+			<form class="d-flex d-none d-lg-block mx-auto  mb-1  navbarItemLupa"> <!-- Buscador -->
+			<input class="form-control me-2" type="search" placeholder="Sandwicherias" aria-label="Search">
+			</form>
+
+		</nav>
+		
+		<!-- El siguiente div corresponde al offcanvas diseñado para moviles -->
+
+		<div class="mb-auto d-lg-none offcanvas-lg w-75 offcanvas-end  shadow p-3 mb-5 rounded" id="offcanvasResponsive"
+			aria-labelledby="offcanvasResponsiveLabel">
+			<div>
+				<img src="./assets/img/logos/Profile icon.png" class="rounded mx-auto d-block profileIcon" alt="...">
+			</div>
+			<div class="d-flex justify-content-center mt-3 link-dark">
+				<h3>Nombre de Usuario</h3>
+			</div>
+			<div class="offcanvas-body">
+				<div class="mt-2 d-flex flex-column h-100">  
+				<form class="d-flex mb-2 navbarItemLupa"> <!-- Buscador -->
+					<input class="form-control me-2" type="search" placeholder="Sandwicherias" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+				</form>
+				<div class="mb-2 navbarItem"> <!-- Inicio -->
+					<a href="/index.html" class="link-dark text-decoration-none">
+						<i class="bi bi-house"></i>
+						<span span>Inicio</span>
+					</a>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Perfil -->
+					<a href="./restaurantes.html" class="link-dark text-decoration-none">
+					<i class="bi bi-shop"></i>
+					<span>Restaurantes</span>
+					</a>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Mis Pedidos -->
+					<a href="./mispedidos.html" class="link-dark text-decoration-none">
+						<i class="bi bi-list-stars"></i>
+						<span>Mis Pedidos</span>
+					</a>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Perfil -->
+					<a href="./perfil.html" class="link-dark text-decoration-none">
+					<i class="bi bi-person"></i>
+					<span>Perfil</span>
+					</a>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Mis cupones -->
+					<a href="./Cupones.html" class="link-dark text-decoration-none">
+						<i class="bi bi-ticket-perforated"></i>
+						<span>Mis Cupones</span>
+					</a>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Atencion -->
+					<a href="#" class="link-dark text-decoration-none">
+						<i class="bi bi-headset"></i>
+						<span>Atencion</span>
+				</div>
+				<div class="mb-2 navbarItem"> <!-- Acerca de -->
+					<a href="./about.html" class="link-dark text-decoration-none">
+					<i class="bi bi-info-circle"></i>
+					<span>Acerca de</span>
+					</a>
+					</div>
+					<div class=" mt-auto navbarItem border-top border-dark position-fixed bottom-0 "> <!-- Acerca de -->
+					<i class="bi bi-person"></i>
+					<button type="button" class="btn link-dark traslateInicio text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Iniciar Sesion
+					</button>
+					</a>
+					</div>
+				
+			</div>
+			</div>
+		</div>
+	</header>
+
+	  <!-- login en modal -->
+	  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			  <div class="modal-content rounded-5">	
+				  
+				  <form class="d-flex flex-column p-lg-3 border border-dark rounded-5 w-100 colorSesion sectionShadow">
+					  <div class="d-flex justify-content-between">
+						  <span class="d-flex mb-lg-4 inicioSesion mx-auto">Inicio de Sesion</span>
+						  <button type="button" class="btn-close ingresoRedes m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Nombre de Usuario</label>
+						  <div class="col-10">
+							  <input type="text" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Contraseña</label>
+						  <div class="col-10">
+							  <input type="password" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="d-flex justify-content-center">
+			  <a href="./Error404.html" class="btn btn-naranja col-10 mt-lg-2 traslateInicio ">Ingresar</a>
+					  </div>
+					  <a href="./Error404.html" class="d-flex justify-content-center text-decoration-none link-dark mt-3 h6">
+						  <i class="bi bi-google me-2 googleSesion"></i>
+						  <p class="googleSesion">Iniciar sesion con Google</p>
+					  </a>
+					  <a href="./Error404.html" class="d-flex justify-content-center link-dark">¿Olvidaste tu contraseña?</a>
+					  <div class="d-flex justify-content-center border-top border-dark mt-4">
+						  <button type="button" class="btn btn-naranja col-8 mt-4 mb-4  traslateInicio" data-bs-toggle="modal"  data-bs-target="#registro">
+							  Crear cuenta nueva
+						  </button>
+					  </div>
+				  </form>				
+			  
+			  </div>
+		  </div>
+	  </div>
+  
+	<!-- FORMULARIO -->
+	  <div class="modal fade" id="registro" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			  <div class="modal-content rounded-5">	
+				  
+				  <form class="d-flex flex-column p-lg-3 border border-dark rounded-5 w-100 colorSesion sectionShadow">
+					  <div class="d-flex justify-content-between">
+						  <span class="d-flex mb-lg-4 inicioSesion mx-auto">Formulario de registro</span>
+						  <button type="button" class="btn-close ingresoRedes m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Nombre</label>
+						  <div class="col-10">
+							  <input type="text" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Apellido</label>
+						  <div class="col-10">
+							  <input type="text" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Nombre de Usuario</label>
+						  <div class="col-10">
+							  <input type="text" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Numero Telefonico</label>
+						  <div class="col-10">
+							  <input type="number" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Contraseña</label>
+						  <div class="col-10">
+							  <input type="password" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Repetir Contraseña</label>
+						  <div class="col-10">
+							  <input type="password" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Fecha de Nacimiento</label>
+						  <div class="col-10">
+							  <input type="date" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Correo electronico</label>
+						  <div class="col-10">
+							  <input type="email" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  <div class="row mb-lg-3 mb-lg-2 justify-content-center">
+						  <label for="inputEmail3" class="col-10 col-form-label">Domicilio</label>
+						  <div class="col-10">
+							  <input type="text" class="form-control" id="inputEmail3" />
+						  </div>
+					  </div>
+					  
+					  <a href="#" class="d-flex justify-content-center text-decoration-none link-dark mt-3 h6">
+						  <i class="bi bi-google me-2 googleSesion"></i>
+						  <p class="googleSesion">Registrarse con Google</p>
+					  </a>
+					  <div class="form-check d-flex justify-content-center">
+						  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						  <label class="form-check-label" for="flexCheckDefault">
+							De acuerdo con los <a href="./Error404.html">Terminos y Condiciones</a>
+						  </label>
+						</div>
+					  <div class="d-flex justify-content-center border-top border-dark mt-4">
+			  <a href="./Error404.html" class="btn btn-naranja col-10 mt-lg-2 traslateInicio ">Confirmar</a>
+					  </div>
+				  </form>				
+			  
+			  </div>
+		  </div>
+	  </div>
+
+  <main class="text-center">
+    <!-- titulo de cuponera  -->
+    <h1 class="mb-5 h1Fuente">Cuponera de DESCUENTO de las Principales Sandwicherías </h1>
+    <div class="container text-center  bg-gradient rounded-4">
+
+      <!-- tarjetas de descuento  -->
+      <div class="row justify-content-around px-1 py-3">
+
+        <!-- tarjeta 1 chacho-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/chacho.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">CHACHO</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-20%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tarjeta 2 el crack-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/craks.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">EL CRACK</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-15%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tarjeta 3 Animo -->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/amino.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">ANIMO</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-10%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tarjeta 4 DON PEPE-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/don pepe.jpg" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">DON PEPE</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-20%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tarjeta 5 CLUB DE LA MILANESA-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/el club de la milanesa.jpg"
+                class="img-fluid rounded pt-1" alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">EL CLUB DE LA MILANESA</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-10%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 6 EL NEGRO-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/el negro.jpg" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">EL NEGRO</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-20%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 7 EL 10-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/el10.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">EL 10</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-20%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 8 EL TURCO -->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/elturco1.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">EL TURCO</h4>
+                <p class="card-text Contactanos">Cupon de Descuento</p>
+                <h2 class="pb-1">-15%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 9 FIKY-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/fiky.jpg" class="rounded-circle img-fluid pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">FIKY</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-20%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 10 LA MOROCHA-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/la_morocha.png" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">LA MOROCHA</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-10%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta e l 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 11 TATO-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/tato.jpg" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">TATO</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-5%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- tarjeta 12 TUTTI-->
+        <div class="col-12 col-md-5 card cardDescuento mb-3 rounded-4 " style="max-width: 540px;">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4 ">
+              <img src="./assets/img/logos/logo de bares (cards)/tutti.jpg" class="img-fluid rounded pt-1"
+                alt="LOGO DE SANDWICHERIA">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title h4Fuente">TUTTI</h4>
+                <p class="card-text">Cupon de Descuento</p>
+                <h2 class="pb-1">-15%</h2>
+                <a href="./Error404.html" target="_blank" class="btn btn-secondary mb-2 bg-gradient"
+                  role="button" aria-disabled="true">Lo Quiero!!!</a>
+                <p class="card-text"><small class="text-muted">Valido hasta el 30/9/23</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- mensaje de Gracias -->
+    <div class="d-flex justify-content-center align-items-center m-3">
+      <img src="./assets/img/logos/logo-icono.svg" class="" style="width: 35px;" alt="">
+      <h1 class="mx-3 h1Fuente">Gracias por elegirnos</h1>
+      <img src="./assets/img/logos/logo-icono.svg" class="" style="width: 35px;" alt="">
+    </div>
+
+  </main>
+  <footer class="container-fluid text-white bg-dark bg-gradient">
+    <!-- logo -->
+    <section class="text-center ">
+      <img src="./assets/img/logos/logo2.svg" alt="logo del footer" class="pt-2 logo2">
+
+    </section>
+    <!-- quienes somos, contactos, pagos -->
+    <div class="row text-md-center text-left mt-3">
+      <!-- quienes somos -->
+      <div class="col-12 col-md-4  pt-4 pt-md-0 ">
+        <h4>¿ Quiénes somos ?</h4>
+        <p>Somos una empresa comprometida en ofrecer soluciones innovadoras para nuestros clientes. Nuestro objetivo es
+          brindar productos y servicios de alta calidad que satisfagan las necesidades de nuestros usuarios.</p>
+      </div>
+      <!-- Contactos  -->
+      <div class="col-12 col-md-4  pt-4 pt-md-0">
+        <h4 class="">Contacto</h4>
+        <ul class="list-unstyled">
+          <li class="iconoContacto">
+            <a href="https://www.google.com/maps/place/RollingCode+School/@-26.8366961,-65.2097767,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018!16s%2Fg%2F11h0b4kn08?hl=es"
+              target="_blank" class="text-decoration-none text-white "><i class="bi bi-geo-alt direccion fs-2 me-1"></i>
+              Gral. Paz 576, San Miguel de Tucumán</a>
+          </li>
+          <li class="iconoContacto">
+            <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" class="text-decoration-none text-white "
+              target="_blank"><i class="bi bi-envelope-at email fs-2 me-1 "></i> Laesquinadelsanwich@gmail.com</a>
+          </li>
+          <li class="iconoContacto">
+            <a href="./Error404.html" class="text-decoration-none text-white " target="_blank"><i
+                class="bi bi-telephone-forward  fs-2 me-1 "></i> 4225588</a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-around h1 ">
+          <a href="https://web.whatsapp.com/" target="_blank" class="text-decoration-none text-white iconoContacto"><i
+              class="bi bi-whatsapp"></i></a>
+          <a class="text-decoration-none text-white iconoContacto" href="https://www.facebook.com" target="_blank"><i
+              class="bi bi-facebook "></i></a>
+          <a href="https://www.twitter.com" class="text-decoration-none text-white iconoContacto" target="_blank"><i
+              class="bi bi-twitter "></i></a>
+          <a href="https://www.instagram.com" class="text-decoration-none text-white iconoContacto " target="_blank"><i
+              class="bi bi-instagram "></i></a>
+        </div>
+      </div>
+      <!-- pago -->
+      <div class="col-12 col-md-4 pt-4 pt-md-0">
+        <h4>Medios de pagos</h4>
+        <div class="d-flex align-items-center pagoFooter">
+          <a href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_Sellers_AO_X_G_Search_X_BrandKW_X&gclid=CjwKCAjwvJyjBhApEiwAWz2nLZmIRqL9CDcyPxPgluUsR7YhrCxZDcfHheaSXFHH8NNi9dunWNHQGhoCTOIQAvD_BwE"
+            target="_blank"><img src="./assets/img/logos/visa.png" class="w-100 imgPago" alt="Visa"></a>
+          <a href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_Sellers_AO_X_G_Search_X_BrandKW_X&gclid=CjwKCAjwvJyjBhApEiwAWz2nLZmIRqL9CDcyPxPgluUsR7YhrCxZDcfHheaSXFHH8NNi9dunWNHQGhoCTOIQAvD_BwE"
+            target="_blank"><img src="./assets/img/logos/mercadopago-logo.png" class="imgPago w-100 mx-3"
+              alt="mercadopago"></a>
+          <a href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_Sellers_AO_X_G_Search_X_BrandKW_X&gclid=CjwKCAjwvJyjBhApEiwAWz2nLZmIRqL9CDcyPxPgluUsR7YhrCxZDcfHheaSXFHH8NNi9dunWNHQGhoCTOIQAvD_BwE"
+            target="_blank"><img src="./assets/img/logos/mastercard.png" class="w-75 imgPago" alt="Mastercard"></a>
+          <a href="https://www.mercadopago.com.ar/paid?code=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_Sellers_AO_X_G_Search_X_BrandKW_X&gclid=CjwKCAjwvJyjBhApEiwAWz2nLZmIRqL9CDcyPxPgluUsR7YhrCxZDcfHheaSXFHH8NNi9dunWNHQGhoCTOIQAvD_BwE"
+            target="_blank"><img src="./assets/img/logos/amarican expres.png" class="w-100 imgPago" alt="american"></a>
+        </div>
+
+      </div>
+    </div>
+    <!-- copyright -->
+    <div>
+      <p class="text-center h6 pb-1 pt-0 pt-md-1">
+        &copy; 2023 La Esquina del Sandwich. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

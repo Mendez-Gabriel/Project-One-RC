@@ -1,0 +1,799 @@
+header {
+  z-index: 2;
+
+}
+
+main {
+  z-index: 1;
+}
+
+
+
+:root {
+  --color-rojo: #D0302A;
+  --color-rojo-fuerte: #b12c28;
+  --color-rojo-fuerte-2: #a12c28;
+  --color-pan: #ECCB6C;
+  --color-pan-fuerte: #e2c570;
+  --color-pan-fuerte-2: #d7bb64;
+  --color-naranja: #E0782F;
+  --color-naranja-fuerte: #DA5E2B;
+  --color-naranja-fuerte-2: #c65122;
+  --color-marron: #875639;
+  --color-marron-fuerte: #744a32;
+  --color-marron-fuerte-2: #5f3e2b;
+  --color-gris: #f7f3f5;
+}
+
+
+
+ /*------------NavBar------------ */
+
+/* Mobile */
+.offcanvas-lg {
+  margin-top: 6.6vh;
+  transition: 0.25s;
+  color: black;
+  background-color: #ECCB6C;
+}
+
+.profileIcon {
+  width: 20vw;
+}
+
+.navbarIcon {
+  width: 7vw;
+}
+
+/* NavBar Escritorio */
+
+.nav-link {
+  color: #ECCB6C;
+}
+
+/* NavBar */
+
+.navbarItem i {
+  font-size: 25px;
+}
+
+.navbarItemLupa i {
+  font-size: 15px;
+}
+
+/* -------------Modal Iniciar sesion------------- */
+
+/* background color sesion */
+.colorSesion {
+  background-color: var(--color-gris);
+}
+
+ /*tamaño de fuente "inicio de sesion"*/
+.inicioSesion {
+    font-size: 25px;
+}
+
+/* efecto en botones */
+.traslateInicio:active {   
+  transform: translateY(5px);
+}
+
+
+
+
+/* media querys */
+
+@media (max-width: 280px) {
+
+  .googleSesion {
+    font-size: 10px;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .ingresoRedes {
+    font-size: 13px;
+  }
+  
+}
+
+/* Modal de Registro */
+
+.form-check-label a{
+    color: black;
+    text-decoration: none;
+}
+
+.form-check-label a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* --------------------CARRUCEL DE FOTOS-------------------- */
+
+.altoItem{
+  height: 400px;
+}
+.altoImg{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.sectionShadow:hover {
+
+  -webkit-box-shadow: 0px 0px 17px 20px rgba(236, 203, 108, 1);
+-moz-box-shadow: 0px 0px 17px 20px rgba(236, 203, 108, 1);
+box-shadow: 0px 0px 17px 20px rgba(236, 203, 108, 1);
+
+transition: 0.7s;
+}
+
+
+
+/* ------------------------BOTONES------------------------ */
+
+
+.btn-naranja{
+
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--color-naranja);
+  --bs-btn-border-color: var(--color-naranja);
+ 
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg:var( --color-naranja-fuerte);
+  --bs-btn-hover-border-color: var(--color-naranja-fuerte);
+
+  --bs-btn-active-color:var(--bs-white) ;
+  --bs-btn-active-bg:  var(--color-naranja-fuerte-2);
+  --bs-btn-active-border-color:var(--color-naranja-fuerte-2);
+}
+.btn-marron {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--color-marron);
+  --bs-btn-border-color: var(--color-marron);
+
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg:var(--color-marron-fuerte) ;
+  --bs-btn-hover-border-color:var(--color-marron-fuerte);
+  
+  --bs-btn-active-color:  var(--bs-white);
+  --bs-btn-active-bg:var(--color-marron-fuerte-2) ;
+  --bs-btn-active-border-color:var(--color-marron-fuerte-2);
+}
+
+
+/*------------------------- CARDS -------------------------*/
+/* padding section */
+
+.sectionPadding {
+  padding: 20px;
+}
+
+
+/* border radius de la imagen de los sanguches */
+
+.cardImagenes {
+  border-radius: 2rem 2rem 0 0;
+  height: 30vh;
+}
+
+/* border radius de las cards */
+.cuerpoCard{
+  border-radius: 2rem;
+  
+}
+
+/* aplicado al boton dentro de la card */
+.cuerpoDos:active {
+  transform: translateY(5px);
+
+}
+
+/* Color de las estrellas */
+
+.stars {
+  color: var(--color-naranja-fuerte);
+  font-size: 20px;
+
+}
+
+/* tamaño de las letras dentro de la card en mobile */
+.tamañoLetra {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tamañoValoracion {
+  font-size: 16px;
+}
+
+@media (max-width=1200px) {
+  .tamañoLetra {
+    font-size: 100px;
+  }
+}
+
+/* colores */
+
+.colorSection {
+  background: var(--color-naranja);
+}
+
+.colorCard {
+  background: var(--color-pan);
+}
+
+.colorDiv {
+  background: var(--color-marron);
+  border-radius: 2rem;
+}
+
+
+
+/* media querys */
+
+@media (max-width: 280px) {
+.tituloCard {
+      font-size: 17px;
+}
+.tamañoFoto {
+      width: 70px;
+      height: 50px;
+}
+.tamañoLetra {
+      font-size: 11px;
+}
+.tamañoTitulo {
+      font-size: 20px;
+}
+.sectionPadding {
+      padding: 20px;
+}
+.tamañoValoracion {
+  font-size: 12px;
+
+}
+.stars {
+  font-size: 12px;
+}
+}  
+
+
+@media (min-width: 540px) {
+.paddingMarron {
+  padding: 20px;
+}
+.sectionPadding {
+  padding: 90px;
+}
+.tamañoLetra {
+  font-size: 16px;
+}
+.stars {
+  font-size: 17px;
+}
+.tamañoValoracion {
+  font-size: 17px;
+}
+.tituloCard {
+  font-size: 25px;
+}
+}
+
+
+@media (min-width: 768px) {
+.sectionPadding {
+  padding: 80px;
+}
+.tamañoValoracion {
+  font-size: 15px;
+}
+.tituloCard {
+  font-size: 20px;
+}
+}
+
+@media (min-width: 820px) { 
+.tamañoValoracion {
+  font-size: 17px;    
+}
+}
+
+
+@media (min-width: 992px) {
+main {
+    padding-top: 140px;
+}
+
+.hoverCard:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+.hoverBoton:hover {
+  background-color: var(--color-rojo);
+
+}
+.sectionPadding {
+  padding: 40px;
+}
+
+.tituloCard {
+  font-size: 20px;
+}
+
+.tamañoValoracion {
+  font-size: 14px;
+
+}
+.tamañoLetra {
+  font-size: 13px;
+}
+}
+
+
+@media (min-width: 1280px) {
+
+.sectionPadding {
+  padding: 50px;
+}
+.tituloCard {
+  font-size: 28px;
+}
+.tamañoLetra {
+  font-size: 20px;
+}
+.tamañoValoracion {
+  font-size: 20px;
+}
+}
+
+
+
+/* ---------------------------about--------------------------- */
+
+.borderNaranja{
+  border-color: var(--color-naranja) !important;
+}
+.hr-2{
+  width: 60px;
+}
+
+.hrCenter{
+  margin: auto;
+}
+
+#about{
+  background-color: var(--color-gris);  
+}
+.aboutBackground{
+height: 350px;
+}
+.aboutBackgroundImg{
+  background-image: url(../assets/img/about/slide-about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card-2{
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.091); */
+  overflow: hidden;
+  border-radius: 15px;
+}
+.img-2 img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4.7px solid #fff;
+  transition: .7s;
+}
+.card-2:hover .img-2 img{
+  border-color:var(--color-naranja);
+  transition: .7s;
+}
+.mainText{
+  padding: 15px 0;
+}
+.mainText h2{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.socials i {
+  font-size: 20px;
+  color: var(--color-naranja);
+  padding: 0 10px;
+}
+
+/*-----------------------------detalles-----------------------------*/
+#detalles{
+  background-color: var(--color-gris);
+}
+
+#detalles i{
+  font-size: 80px;
+}
+
+/*-----------------------------CUPONES-----------------------------*/
+.bodyNaranja{
+  background: #E0782F;
+  background: radial-gradient(circle, #E0782F 0%, #DA5E2B 57%, #c65122, 100%);
+}
+
+
+
+.h1Fuente{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5.5rem;
+  color: #131212;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  padding-top: 80px;
+}
+.h4Fuente{
+  font-family: 'Abril Fatface', cursive;
+}
+.cardDescuento{
+  background-color: rgb(203, 218, 216);
+  transition: all 200ms;
+}
+.cardDescuento:hover{
+  transform: scale(1.15);
+}
+
+
+/* medias */
+@media screen and (min-width: 415px) {
+  .logoDescuento {
+    width: 25%;
+    height: auto;
+  }
+  
+}
+@media screen and (max-width: 415px) {
+  .logoDescuento {
+    width: 75%;
+    height: auto;
+  }
+}
+
+/* ---------------------------RESTAURANTES--------------------------- */
+.bodyColor{
+  background-color: var(--color-rojo-fuerte);
+}
+/* imagen de bonde heder */
+.headerChacho {
+background-image: url('../assets/img/Backgrounds/chacho1.jpg');
+background-size: cover;
+background-position: center;
+height: 400px;
+
+}
+.headerAmino {
+background-image: url('../assets/img/Backgrounds/amino.png');
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+.headerFiky {
+background-image: url('../assets/img/Backgrounds/fiky2.png');
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+.headerSandwicheria{
+display: flex;
+align-items: end;
+justify-content: start;
+text-align: center;
+}
+.logoSandwicheria {
+width: 100px;
+height: 100px;
+margin-bottom: 5px;
+}
+.h1Fuente{
+font-family: 'Abril Fatface', cursive;
+font-size: 5.5rem;
+color: #131212;
+font-weight: bold;
+text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+.h2Fuente{
+font-family: 'Abril Fatface', cursive;
+}
+
+.direccion, .horario, .telefono, .descripcion {
+font-size: 18px;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+}
+/* cards de pedidos */
+
+.cardPedido {
+width: 18rem;
+margin-bottom: 20px;
+background-color: var(--color-rojo-fuerte);
+}
+.imagenCard {
+height: 200px;
+object-fit: cover;
+}
+.btnPedir {
+width: 100%;
+}
+
+/* media */
+@media screen and (max-width: 541px) {
+.h1Fuente {
+font-size: 3rem;
+}
+.h2Fuente{
+font-size: 2rem;
+}
+.headerSandwicheria{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+}
+@media screen and (min-width: 800px) {
+.cardPedido:hover{
+transform: scale(1.15);
+transition: 200ms;
+}
+.mapaSandwicheria:hover{
+transform: scale(1.15);
+transition: 200ms;
+}
+}
+
+ /*-----------------------------FOOTER-----------------------------*/
+
+
+
+.pagoFooter{
+    aspect-ratio: 4/2;
+}
+
+.imgPago{
+  transition: all 200ms;
+}
+.imgPago:hover{
+  transform: scale(1.40);
+}
+.iconoContacto{
+  transition: all 200ms;
+}
+.iconoContacto:hover{
+  transform: scale(1.30);
+}
+
+/* medias */
+@media screen and (min-width: 415px) {
+    .logo2 {
+      width: 25%;
+      height: auto;
+    }
+  }
+ 
+@media screen and (max-width: 415px) {
+    .logo2 {
+      width: 75%;
+      height: auto;
+    }
+  }
+
+
+
+/* ---------------Mis Pedidos--------------- */
+.btnMarron {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--color-marron);
+  --bs-btn-border-color: var(--color-marron);
+
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg:var(--color-marron-fuerte) ;
+  --bs-btn-hover-border-color:var(--color-marron-fuerte);
+  
+  --bs-btn-active-color:  var(--bs-white);
+  --bs-btn-active-bg:var(--color-marron-fuerte-2) ;
+  --bs-btn-active-border-color:var(--color-marron-fuerte-2);
+}
+
+.MisPedidos {
+  font-size: 20px;
+}
+
+/* estilos botones mobile */
+
+
+.tamañoSliders {
+  font-size: 20px;
+}
+
+.tamañoBotones {
+  width: 90px;
+  height: 30px;
+}
+
+.letraBotones {
+  font-size: 13px;
+  padding-top: 3px;
+}
+
+
+/* letra en los filtros de offcanvas */
+.letraFiltros {
+  font-size: 17px;
+}
+
+
+
+/* estilos en las cards */
+.tituloPrincipalcard {
+  font-size: 14px;
+}
+
+.fechaCard {
+  font-size: 10px;
+}
+
+
+
+/* titulo de la seccion de las cards */
+.fontPedidos {
+  font-size: 18px;
+}
+
+
+.botonTamaño {
+  width: 100px;
+}
+
+/* Colores */
+
+
+.colorNav {
+background-color: var(--color-naranja-fuerte);
+}
+
+.colorFoot{
+  background-color: var(--color-marron);
+}
+
+.colorMainCard {
+  background-color: var(--color-naranja);
+}
+
+.interiorCard {
+  background-color: var(--color-pan);
+}
+
+.colorOff {
+  background-color: var(--color-pan-fuerte-2);
+}
+
+.botonTranslate:active {   
+  transform: translateY(5px);
+}
+
+.botonesDos {
+  width: 100px;
+}
+
+  
+/* media querys */
+
+
+@media (max-width: 280px) {
+  .tituloPrincipalcard {
+      font-size: 1px;
+  }
+  
+  .fechaCard {
+      font-size: 1px;
+  }
+  .tamañoNombre {
+      font-size: 1px;
+  }
+  .tamañoFoto {
+      width: 40px ;
+      height: 40px;
+  }
+
+  .botonesDos {
+      width: 60px;
+      height: 30px;
+  }
+
+  .tituloDos {
+      font-size: 10px;
+  }
+
+  .fechaDos {
+      font-size: 7px;
+  }
+
+  .titulosBar {
+      font-size: 15px;
+  }
+
+  .letrasDos {
+      font-size: 7px;
+  }
+  .fontPedidos {
+      font-size: 14px;
+  }
+  .MisPedidos {
+      font-size: 17px;
+  }
+  
+}
+
+@media (min-width: 500px) {
+  .botonesDos {
+      width: 150px;
+}
+  .logoOff {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fontPedidos {
+      font-size: 25px;
+   }
+   .botonesDos {
+      width: 250px;
+  }
+  .logoOff {
+      width: 200px;
+      height: 200px ;
+  }
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .MisPedidos {
+      font-size: 25px;
+  }
+
+  .fontPedidos {
+      font-size: 30px;
+  }
+  .cardHover:hover {
+      transform: translateY(5px);
+      cursor: pointer;
+  }
+  .botonHover:hover {
+      background-color: var(--color-rojo);
+  }
+  .fontFecha {
+      font-size: 12px;
+  }
+
+}
+
+
+@media (min-width:1280px) {
+  .tamañoSliders {
+      font-size: 25px;
+  }
+
+}
